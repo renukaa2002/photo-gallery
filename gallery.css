@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gallery figure {
+    margin-bottom: 20px;
+}
+
+#featured-image {
+    border: 5px solid #333;
+    margin-bottom: 10px;
+}
+
+#thumbnail-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#thumbnail-list li {
+    display: inline-block;
+}
+
+#thumbnail-list img {
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+    filter: grayscale(100%);
+    border: 2px solid transparent;
+}
+
+#thumbnail-list img:hover {
+    transform: scale(1.1);
+    filter: none;
+    border: 2px solid #333;
+}
